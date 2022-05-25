@@ -46,9 +46,6 @@
           </li>
         </ul>
       </header>
-      <div class="hotels-found">
-        <p class="number-of-hotels">Найдено гостиниц: 38</p>
-      </div>
       <section class="catalog-housing">
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <button class="button" type="submit">Показать</button>
@@ -103,6 +100,9 @@
             <button class="reset-button button" type="reset">Сбросить</button>
           </div>
         </form>
+        <div class="hotels-found">
+          <p class="number-of-hotels">Найдено гостиниц: 38</p>
+        </div>
         <select class="select-control" aria-label="Сортировка">
           <option class="option-popular" value="popular">Сначала популярное</option>
           <option class="option-cheap" value="cheap">Сначала дешёвое</option>
@@ -115,12 +115,12 @@
             </a>
           </li>
           <li class="view-type-item">
-            <a class="button" href="#">
+            <a class="button view-type-link" href="#">
               <span class="visually-hidden">Показать карточки</span>
             </a>
           </li>
           <li class="view-type-item">
-            <a class="button" href="#">
+            <a class="button view-type-link" href="#">
               <span class="visually-hidden">Карточки на всю ширину</span>
             </a>
           </li>
@@ -224,7 +224,7 @@
         <p class="newsletter-text">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form class="newsletter-input" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="text" id="newsletter-input" name="newsletter-input" placeholder="Ваш e-mail">
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
