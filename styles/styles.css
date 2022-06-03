@@ -116,7 +116,7 @@ body {
 }
 
 .advantages-extra-list-item-wrapper {
-    background-color: #83B3D3;
+    background-color: #F0F6FA;
 }
 
 .advantages-extra-list-item-tools {
@@ -124,7 +124,7 @@ body {
 }
 
 .advantages-item-tools {
-    background-color:#83B3D3;
+    background-color:#E6F0F6;
 }
 
 .search-hotels-intro {
@@ -158,7 +158,7 @@ body {
     text-align: center;
 }
 
-.newsletter-main {
+.newsletter-index {
     color:#000000;
     background-color: #ffffff;
     background-image: url("../images/background-footer.jpeg");
@@ -166,12 +166,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.newsletter {
-    color:#000000;
-    background-color: #ffffff;
-}
-
-.newsletter-main .newsletter-title {
+.newsletter-index .newsletter-title {
     color:#ffffff;
     font-size: 30px;
     line-height: 36px;
@@ -180,7 +175,7 @@ body {
     text-transform: uppercase;
 }
 
-.newsletter-main .newsletter-text {
+.newsletter-index .newsletter-text {
     color:#ffffff;
     font-size: 22px;
     line-height: 26px;
@@ -399,7 +394,7 @@ body {
     text-align: left;
 }
 
-.newsletter-title {
+.newsletter-catalog .newsletter-title {
     color:#000000;
     background-color: #ffffff;
     font-size: 30px;
@@ -409,7 +404,7 @@ body {
     text-transform: uppercase;
 }
 
-.newsletter-text {
+.newsletter-catalog .newsletter-text {
     color:#000000;
     background-color: #ffffff;
     font-size: 22px;
