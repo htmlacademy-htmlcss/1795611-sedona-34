@@ -115,32 +115,34 @@
           </form>
         </section>
       </div>
-      <div class="hotels-found">
-        <p class="number-of-hotels">Найдено гостиниц: 38</p>
+      <div class="hotels-sorted">
+        <div class="hotels-found">
+          <p class="number-of-hotels">Найдено гостиниц: 38</p>
+        </div>
+        <select class="select-control" aria-label="Сортировка">
+          <option class="option-popular" value="popular">Сначала популярное</option>
+          <option class="option-cheap" value="cheap">Сначала дешёвое</option>
+          <option class="option-expensive" value="expensive">Сначала дорогое</option>
+        </select>
+        <ul class="view-type-list">
+          <li class="view-type-item">
+            <a class="button view-type-link-first" href="#" >
+              <span class="visually-hidden">Показать список</span>
+              <img class="page-header-logo" alt="Логотип Седоны" src="images/icon-table-1.svg" width="16" height="14">
+            </a>
+          </li>
+          <li class="view-type-item">
+            <a class="button view-type-link-second" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+          </li>
+          <li class="view-type-item">
+            <a class="button view-type-link-three" href="#">
+              <span class="visually-hidden">Карточки на всю ширину</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <select class="select-control" aria-label="Сортировка">
-        <option class="option-popular" value="popular">Сначала популярное</option>
-        <option class="option-cheap" value="cheap">Сначала дешёвое</option>
-        <option class="option-expensive" value="expensive">Сначала дорогое</option>
-      </select>
-      <ul class="view-type-list">
-        <li class="view-type-item">
-          <a class="button view-type-link-first" href="#" >
-            <span class="visually-hidden">Показать список</span>
-            <img class="page-header-logo" alt="Логотип Седоны" src="images/icon-table-1.svg" width="16" height="14">
-          </a>
-        </li>
-        <li class="view-type-item">
-          <a class="button view-type-link-second" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-        </li>
-        <li class="view-type-item">
-          <a class="button view-type-link-three" href="#">
-            <span class="visually-hidden">Карточки на всю ширину</span>
-          </a>
-        </li>
-      </ul>
       <section class="catalog">
         <ul class="catalog-item">
           <li class="catalog-card">
@@ -203,12 +205,7 @@
       </section>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-prev pagination-disabled">
-            <span class="visually-hidden">Предыдущая страница</span>
-          </a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+          <a class="pagination-current">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -221,7 +218,7 @@
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-next" href="#">
-            <span class="visually-hidden">Следующие страницы</span>
+            <span class="visually-hidden">...</span>
           </a>
         </li>
         <li class="pagination-item">
@@ -230,7 +227,7 @@
       </ul>
       <div class="items-per-page">Гостиниц на странице:</div>
       <select class="select-control-number" aria-label="количество страниц">
-        <option value="popular">4</option>
+        <option value="popular"></option>
       </select>
       <section class="newsletter-catalog">
         <h2 class="newsletter-title">
