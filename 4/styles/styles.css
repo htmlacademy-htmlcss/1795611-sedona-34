@@ -425,11 +425,20 @@ input[type="text" i] {
     text-align: center;
 }
 
+.hotels-sorted {
+    width: 1057px;
+    height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 57px;
+}
+
 .number-of-hotels {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-align: left;
+    margin-left: 73px;
 }
 
 .select-control {
@@ -463,6 +472,23 @@ input[type="text" i] {
     background-repeat: no-repeat;
 }
 
+.catalog-item {
+    width: 1056px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 73px;
+}
+
+.catalog-card {
+    width: 340px;
+    height: 438px;
+}
+
+.catalog {
+    width: 1056px;
+    height: 876px;
+}
+
 .catalog-card-title {
     font-size: 24px;
     line-height: 28px;
@@ -488,32 +514,38 @@ input[type="text" i] {
 
 .catalog-card-button-wrapper {
     color: #ffffff;
+    font-family: "PT Sans", Arial, sans-serif;
     background-color: #756157;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .catalog-card-button {
     color: #ffffff;
+    font-family: "PT Sans", Arial, sans-serif;
     background-color:#82B3D3;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     text-align: center; 
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .button-insert {
     color: #ffffff;
+    font-family: "PT Sans", Arial, sans-serif;
     background-color:#7DB54F;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .rating {
@@ -525,8 +557,15 @@ input[type="text" i] {
     text-align: center;
 }
 
+.pagination {
+    display: flex;
+    width: 370px;
+    justify-content: space-evenly;
+}
+
 .pagination-current {
     background-color: #f2f2f2;
+    color: #000000;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -557,6 +596,19 @@ input[type="text" i] {
     line-height: 21px;
     font-weight: 400;
     text-align: left;
+}
+
+.newsletter-catalog {
+    color:#000000;
+    background-color: #ffffff;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 411px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .newsletter-catalog .newsletter-title {
