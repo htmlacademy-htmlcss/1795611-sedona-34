@@ -65,6 +65,11 @@ body {
 
 .user-navigation {
   margin-left: auto;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .button-navigation {
@@ -77,21 +82,33 @@ body {
   text-transform: uppercase;
   width: 160px;
   height: 37px;
-  margin-left: 20px;
+  margin-left: 32.3px;
+  margin-right: 70px;
+  border: none;
+  border-radius: 5px;
 }
 
 .navigation-item-search {
   margin-bottom: auto;
   margin-top: auto;
   margin-left: 30px;
+  margin: 0;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 .navigation-item-like {
-  margin-top: auto;
+  margin: 0;
   margin-bottom: auto;
-  margin-left: -30px;
+  margin-top: auto;
+  margin-left: 23.52px;
 }
 
+.navigation-item-extra {
+  margin: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+}
 
 .page-container {
   width: 1200px;
@@ -103,12 +120,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-.vector-logo {
-  margin-top: -26px;
-  margin-left: -1px;
-}
-
 
 .navigation-link {
   font-family: "PT Sans", Arial, sans-serif;
@@ -135,7 +146,8 @@ body {
 .welcome-logo {
   color: #ffffff;
   background-color: #000000;
-  background-image: url(../images/index-background.jpg);
+  background-image: url(../images/vector.svg), url(../images/index-background.jpg);
+  background-position: bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1200px;
@@ -145,11 +157,12 @@ body {
 }
 
 .intro {
-  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 63px;
+  padding-bottom: 90px;
 }
 
 .intro .intro-title {
@@ -159,7 +172,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 63px;
+  margin: 0;
+  margin-bottom: 31px;
 }
 
 .intro .intro-text {
@@ -169,7 +183,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 90px;
+  margin: 0;
 }
 
 .advantages-item {
@@ -180,34 +194,37 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   display: flex;
-  margin-left: -40px;
 }
 
 .advantages-container-wrapper-main {
   width: 400px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  padding-top: 92px;
+  padding-bottom: 92px;
 }
 
 .advantages-extra-list {
   display: flex;
-  width: 1200px;
-  height: 383px;
-  margin-left: -80px;
+  padding: 0;
 }
 
 .advantages-extra-list-item {
   width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  list-style-type: none;
+  padding-top: 182.5px;
+  padding-bottom: 79.5px;
+}
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
 }
 
 
 .advantages-items {
   width: 400px;
-  height: 384px;
+  list-style-type: none;
+  padding-top: 103px;
+  padding-bottom: 102px;
 }
 
 .advantages-title {
@@ -216,6 +233,8 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .advantages-serial-number {
@@ -223,11 +242,14 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-container-wrapper .advantages-list-text {
   color: #ffffff;
   background-color: #82B3D3;
+  margin: 0 auto;
 }
 
 .advantages-list-text {
@@ -248,6 +270,8 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-extra-list-text {
@@ -257,12 +281,33 @@ body {
   font-weight: 400;
   text-align: center;
   width: 230px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+
 }
 
 .advantages-extra-list-item-wrapper {
   background-color: #F0F6FA;
+}
+
+.advantages-extra-list-first {
+  background-image: url(../images/home.svg);
+  background-repeat: no-repeat;
+  background-position-x: 162.65px;
+  background-position-y: 80.5px;
+}
+
+.advantages-extra-list-second {
+  background-image: url(../images/food.svg);
+  background-repeat: no-repeat;
+  background-position-x: 162.65px;
+  background-position-y: 80.5px;
+}
+
+.advantages-extra-list-three {
+  background-image: url(../images/gift.svg);
+  background-repeat: no-repeat;
+  background-position-x: 162.65px;
+  background-position-y: 80.5px;
 }
 
 .advantages-extra-list-item-tools {
@@ -281,6 +326,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 
 .search-hotels-intro .search-hotels-intro-title {
@@ -290,7 +337,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 297px;
-  margin-top: 91px;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .search-hotels-intro .search-hotels-intro-text {
@@ -300,6 +348,8 @@ body {
   font-weight: 400;
   text-align: center;
   width: 592px;
+  margin: 0;
+  margin-bottom: 56px;
 }
 
 .search-hotels-intro-button {
@@ -310,9 +360,11 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  width: 544px;
-  height: 36px;
-  margin-bottom: 93px;
+  width: 574px;
+  height: 60px;
+  margin: 0;
+  border: 0;
+  border-radius: 5px
 }
 
 .newsletter-index {
@@ -322,11 +374,11 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 411px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .newsletter-index .newsletter-title {
@@ -336,7 +388,8 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin-top: -50px;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .newsletter-index .newsletter-text {
@@ -346,8 +399,8 @@ body {
   font-weight: 400;
   text-align: center;
   width: 475px;
-  height: 52px;
-  margin-bottom: 40px;
+  margin: 0px;
+  margin-bottom: 46px;
 }
 
 .newsletter-input {
@@ -368,6 +421,10 @@ input[type="text" i] {
   line-height: 21px;
   font-weight: 400;
   text-align: left;
+  padding: 0;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+  background-color: #e5e5e5;
 }
 
 .newsletter-button {
@@ -381,6 +438,8 @@ input[type="text" i] {
   text-transform: uppercase;
   width: 200px;
   height: 60px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .footer-phone-link {
@@ -391,7 +450,7 @@ input[type="text" i] {
   font-weight: 400;
   text-align: center;
   text-decoration: none;
-  margin-right: 150px;
+  margin: 0;
 }
 
 .copyright-link-logo {
@@ -402,7 +461,6 @@ input[type="text" i] {
   display: flex;
   width: 1200px;
   height: 120px;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -411,10 +469,15 @@ input[type="text" i] {
   width: 116px;
   height: 17px;
   list-style: none;
-  margin-top: 30px;
-  align-items: flex-end;
-  margin-right: auto;
-  margin-left: 32px;
+  column-gap: 26px;
+  padding: 0;
+  margin: 0;
+  margin-left: 72px;
+  margin-right: 247px;
+}
+
+.copyright-link {
+  margin-left: 247px;
 }
 
 .main-header {
@@ -433,13 +496,14 @@ input[type="text" i] {
   font-weight: 700;
   text-align: left;
   margin: 0;
-  margin-left: 70px;
-  margin-top: 35px;
+  margin-left: -2px;
 }
 
 .breadcrumbs {
   margin-top: 0;
   margin-left: 72px;
+  display: flex;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -450,13 +514,32 @@ input[type="text" i] {
   text-align: center;
 }
 
+.breadcrumbs-link-home {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url(../images/union.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
 .breadcrumbs-item {
   list-style: none;
 }
 
+.filters-fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.filters-fieldset:nth-child(2) {
+  margin-left: 70px;
+}
+
 .filters-buttons {
   margin-left: auto;
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
 }
 
 .filters-legend {
@@ -465,6 +548,13 @@ input[type="text" i] {
   line-height: 26px;
   font-weight: 700;
   text-align: left;
+  padding: 0;
+}
+
+.filters-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
 }
 
 .filters-label {
@@ -477,6 +567,7 @@ input[type="text" i] {
 
 .filters-item {
   list-style: none;
+  margin-bottom: 5px;
 }
 
 .select-button {
@@ -488,6 +579,12 @@ input[type="text" i] {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 60px;
+  width: 160px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .reset-button {
@@ -497,12 +594,14 @@ input[type="text" i] {
   line-height: 20px;
   font-weight: 400;
   text-align: center;
+  background: transparent;
+  border: none;
 }
 
 .hotels-sorted {
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  padding: 65px 71px 57px 72px;
 }
 
 .number-of-hotels {
@@ -510,7 +609,7 @@ input[type="text" i] {
   line-height: 36px;
   font-weight: 700;
   text-align: left;
-  margin-left: 73px;
+  margin: 0;
 }
 
 .select-control {
@@ -520,10 +619,10 @@ input[type="text" i] {
   text-align: left;
   width: 287px;
   height: 48px;
-  margin-bottom: auto;
-  margin-top: auto;
-  margin-left: auto;
   margin-right: 78px;
+  margin-left: 191px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .view-type-link-first {
@@ -552,8 +651,19 @@ input[type="text" i] {
 
 .view-type-list {
   list-style: none;
-  margin-right: 71px;
   padding-left: 0;
+  margin: 0;
+  width: 163px;
+  height: 48px;
+  display: flex;
+  column-gap: 8px;
+}
+
+.view-type-item {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #000000;
+  margin: 0;
 }
 
 .catalog-filter {
@@ -564,22 +674,24 @@ input[type="text" i] {
   width: 1056px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 93px;
-  margin-top: 0;
+  margin: 0;
   padding: 0;
   gap: 16px;
 }
 
 .catalog-card {
-  width: 340px;
-  height: 438px;
+  width: 301px;
+  height: 398px;
   list-style: none;
+  margin: 0;
+  padding: 20px;
 }
 
 .catalog {
   width: 1056px;
   height: 876px;
   margin-bottom: 96px;
+  padding-left: 73px;
 }
 
 .catalog-card-title {
@@ -622,6 +734,7 @@ input[type="text" i] {
   width: 140px;
   height: 29px;
   padding-top: 8px;
+  border-radius: 4px;
 }
 
 .catalog-card-button {
@@ -639,6 +752,7 @@ input[type="text" i] {
   margin-left: 21px;
   height: 29px;
   padding-top: 8px;
+  border-radius: 4px;
 }
 
 .catalog-sort {
@@ -663,6 +777,7 @@ input[type="text" i] {
   margin-left: 21px;
   height: 29px;
   padding-top: 8px;
+  border-radius: 4px;
 }
 
 .stars {
@@ -679,6 +794,7 @@ input[type="text" i] {
   padding-top: 8px;
   width: 160px;
   height: 29px;
+  border-radius: 4px;
 }
 
 .pagination {
@@ -763,11 +879,12 @@ input[type="text" i] {
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 411px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .newsletter-catalog .newsletter-title {
@@ -778,6 +895,8 @@ input[type="text" i] {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .newsletter-catalog .newsletter-text {
@@ -787,13 +906,29 @@ input[type="text" i] {
   line-height: 26px;
   font-weight: 400;
   text-align: center;
+  margin: 0px;
+  margin-bottom: 46px;
 }
 
 .main-header {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  padding-left: 70px;
+  padding-top: 35px;
+  padding-bottom: 65px;
+  padding-right: 70px;
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }

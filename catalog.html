@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
   <div class="page-body">
     <header class="page-header">
@@ -25,8 +23,8 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list user-navigation">
-          <li class="navigation-item navigation-item-search">
+        <ul class="user-navigation">
+          <li class="navigation-item-search">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Поиск
@@ -34,7 +32,7 @@
               <img class="page-header-search" alt="Поиск" src="images/search.svg" width="18.05" height="18.1">
             </a>
           </li>
-          <li class="navigation-item navigation-item-like">
+          <li class="navigation-item-like">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Лайк
@@ -42,7 +40,7 @@
               <img class="page-header-like" alt="Лайк" src="images/favorite.svg" width="18.05" height="17">
             </a>
           </li>
-          <li class="navigation-item navigation-item-extra">
+          <li class="navigation-item-extra">
             <button class="button button-navigation" type="submit">Хочу сюда!</button>
           </li>
         </ul>
@@ -54,7 +52,7 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link visually-hidden" href="index.html">
+              <a class="breadcrumbs-link visually-hidden breadcrumbs-link-home" href="index.html">
                 Домой
               </a>
             </li>
@@ -66,7 +64,7 @@
         <section class="catalog-housing">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filters-fieldset">
-              <legend class="filters-legend">Инфраструктура</legend>
+              <legend class="filters-legend">Инфраструктура:</legend>
               <ul class="filters-list">
                 <li class="filters-item">
                   <label class="filters-label">
@@ -89,8 +87,8 @@
               </ul>
             </fieldset>
             <fieldset class="filters-fieldset">
-              <legend class="filters-legend">Тип жилья</legend>
-              <ul class="filter-list">
+              <legend class="filters-legend">Тип жилья:</legend>
+              <ul class="filters-list">
                 <li class="filters-item">
                   <label class="filters-label">
                     <input class="control-input" type="radio" name="type-of-housing" checked>
