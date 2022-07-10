@@ -53,16 +53,16 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item breadcrumbs-item-home">
-                <a class="breadcrumbs-link visually-hidden" href="index.html">
+                <a class="breadcrumbs-link breadcrumbs-link-home visually-hidden" href="index.html">
                   Домой
                 </a>
-                <span class="breadcrumbs-item-home-logo">
+
                   <svg aria-hidden="true"
                     focusable="false"
                     width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z" fill="white"/>
                   </svg>
-                </span>
+                </a>
               </li>
               <span class="arrow"></span>
               <li class="breadcrumbs-item">
@@ -99,13 +99,13 @@
                 </ul>
               </fieldset>
               <fieldset class="filters-fieldset">
-                <legend class="filters-legend">Тип жилья:</legend>
+                <legend class="filters-legend">Тип Жилья:</legend>
                 <ul class="filters-list">
                   <li class="filters-item">
                     <label class="filters-label">
                       <input class="visually-hidden control-input" type="radio" name="type-of-housing" checked>
                       <span class="control-mark"></span>
-                      <span class="control-label">Гостиницы</span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="filters-item">
@@ -139,10 +139,10 @@
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 228px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -162,13 +162,13 @@
           </div>
           <div class="select sorting-type">
             <select class="select-control" aria-label="Сортировка">
-              <option class="option-popular" value="popular">Сначала популярные</option>
-              <option class="option-cheap" value="cheap">Сначала дешёвые</option>
+              <option class="option-cheap" value="popular">Сначала дешёвые</option>
+              <option class="poption-popular" value="cheap">Сначала популярные</option>
               <option class="option-expensive" value="expensive">Сначала дорогие</option>
             </select>
           </div>
           <ul class="view-type-list">
-            <li class="view-type-item view-type-item-link">
+            <li class="view-type-item view-type-item-wrapper">
               <a class="button" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
@@ -214,7 +214,7 @@
                 <div class="name-catalog-type">Гостиница</div>
                 <b class="catalog-card-price">От 5000 ₽</b>
                 <a class="catalog-card-button-wrapper button" href="#">подробнее</a>
-                <a class="catalog-card-button button" href="#">в избранное</a>
+                <a class="catalog-card-button button button-insert" href="#">в избранном</a>
                 <span class="stars-fourth"></span>
                 <div class="rating">Рейтинг: 9,2</div>
               </div>
@@ -230,7 +230,7 @@
                 <div class="name-catalog-type">Гостиница</div>
                 <b class="catalog-card-price">От 2500 ₽</b>
                 <a class="catalog-card-button-wrapper button" href="#">подробнее</a>
-                <a class="catalog-card-button button button-insert" href="#">в избранное</a>
+                <a class="catalog-card-button button" href="#">в избранное</a>
                 <span class="stars-third"></span>
                 <div class="rating">Рейтинг: 6,9</div>
               </div>
@@ -286,7 +286,7 @@
             Подпишитесь на рассылку
           </h2>
           <p class="newsletter-text">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама,<br> честное бойскаутское!
           </p>
           <form class="newsletter-input" action="https://echo.htmlacademy.ru/" method="post">
             <input type="text" id="newsletter-input" name="newsletter-input" placeholder="Ваш e-mail">
