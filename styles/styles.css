@@ -211,6 +211,10 @@ body {
   margin: 0;
 }
 
+.advantages-extra {
+  list-style: none;
+}
+
 .advantages-item {
   list-style: none;
 }
@@ -494,32 +498,41 @@ body {
   color: #D6D0CD;
 }
 
-.copyright-link-logo svg:hover path {
+.copyright-link-logo:hover path {
   fill: #756157;
 }
 
-.copyright-link-logo svg:focus path {
+.copyright-link:focus path {
   fill: #756157;
 }
 
-.copyright-link-logo svg:active path {
+.copyright-link-logo:active path {
   fill: #D6D0CD;
+}
+
+.copyright-logo {
+  fill: #000000;
+  outline: none;
 }
 
 .copyright-link {
   outline: none;
 }
 
-.social-link-networks svg:hover path {
+.social-link-network:hover path {
   fill: #68A2CA;
 }
 
-.social-link-networks svg:focus path {
+.social-link:focus path {
   fill: #68A2CA;
 }
 
-.social-link-networks svg:active path {
+.social-link-networks:active path {
   fill: #D2E3EF;
+}
+
+.social-logo {
+  fill: #83B3D3;
 }
 
 .range-input:hover {
@@ -626,6 +639,7 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 10px;
+  list-style: none;
 }
 
 .breadcrumbs-link {
@@ -641,16 +655,16 @@ body {
   margin-right: 9px;
 }
 
-.breadcrumbs-item-home svg:hover path {
+.breadcrumbs-item-home:hover path {
   fill: #C5C7CD;
 }
 
-.breadcrumbs-item-home svg:focus path {
+.breadcrumbs-item-home:focus path {
   fill: #FFFFFF;
   outline: none;
 }
 
-.breadcrumbs-item-home svg:active path {
+.breadcrumbs-item-home:active path {
   fill: #7F8582;
 }
 
@@ -759,6 +773,21 @@ body {
   background-color: #3F5E72;
   border-radius: 50%;
   content: "";
+}
+
+.control-input:focus + .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
 }
 
 .select {
@@ -1581,7 +1610,7 @@ body {
   outline: none;
 }
 
-.modal-close-button svg:active path {
+.modal-close-button:active path {
   fill: #a1a1a1;
   outline: none;
 }
@@ -1642,6 +1671,10 @@ body {
   outline: none;
 }
 
+.auth-form .data-form-field-input::placeholder {
+  padding-left: -1px;
+}
+
 .auth-form .data-form-field-output {
   width: 420px;
   height: 50px;
@@ -1665,9 +1698,9 @@ body {
   border: 3px solid #83b3d3;
 }
 
-.data-form-field:active {
+.data-form-field:not(:placeholder-shown) {
   background-color: #ffffff;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .auth-form-button {
@@ -1889,16 +1922,16 @@ body {
   right: -17px;
 }
 
-.field-button svg:hover path {
+.field-button:hover path {
   fill: #000000;
 }
 
-.field-button svg:focus path {
+.field-button:focus path {
   fill: #000000;
   border: 3px solid #83b3d3;
 }
 
-.field-button svg:active path {
+.field-button:active path {
   fill: #cfcfcf;
 }
 
