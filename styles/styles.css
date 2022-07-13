@@ -77,9 +77,10 @@ body {
 }
 
 .button-navigation {
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   background-color: #756157;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
@@ -689,6 +690,10 @@ body {
   padding: 0;
   margin: 0;
   border: 0;
+}
+
+.field-group input[type="text"] {
+  padding-left: 23px;
 }
 
 .filters-fieldset:nth-child(2) {
@@ -1976,7 +1981,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  padding-left: 17px;
   color: #000000
 }
 
