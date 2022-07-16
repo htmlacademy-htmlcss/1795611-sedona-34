@@ -59,7 +59,6 @@ body {
 }
 
 .navigation-list {
-  width: 390px;
   height: 66px;
   margin: 0;
   padding: 0;
@@ -87,7 +86,7 @@ body {
   text-transform: uppercase;
   width: 161px;
   height: 37px;
-  margin-left: 32.3px;
+  margin-left: 27.3px;
   margin-right: 70px;
   border: none;
   border-radius: 5px;
@@ -106,7 +105,8 @@ body {
   margin: 0;
   margin-bottom: auto;
   margin-top: auto;
-  margin-left: 23.52px;
+  margin-left: 22.52px;
+  width: 24px;
 }
 
 .like {
@@ -155,6 +155,10 @@ body {
   list-style: none;
   margin-right: 34px;
   padding-top: 20px;
+}
+
+.navigation-item-wrapper {
+  min-width: 82px;
 }
 
 .navigation-item-link {
@@ -397,8 +401,8 @@ body {
 }
 
 .newsletter-index {
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #000000;
   background-image: url("../images/background-footer.jpeg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -419,6 +423,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+  width: 404px;
 }
 
 .newsletter-index .newsletter-text {
@@ -430,6 +435,32 @@ body {
   width: 475px;
   margin: 0px;
   margin-bottom: 46px;
+  width: 476px;
+}
+
+.newsletter-catalog .newsletter-title {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+  width: 404px;
+}
+
+.newsletter-catalog .newsletter-text {
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 46px;
+  width: 476px;
 }
 
 .newsletter-input {
@@ -520,7 +551,7 @@ body {
   outline: none;
 }
 
-.social-link-network:hover path {
+.social-link:hover path {
   fill: #68A2CA;
 }
 
@@ -650,6 +681,7 @@ body {
   font-weight: 400;
   text-align: center;
   margin-left: 2px;
+  text-decoration: none;
 }
 
 .breadcrumbs-item-home {
@@ -694,6 +726,25 @@ body {
 
 .field-group input[type="text"] {
   padding-left: 23px;
+}
+
+.field-mans input[type="number"]::-webkit-outer-spin-button,
+.field-mans input[type="number"]::-webkit-inner-spin-button, {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.field-mans input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .filters-fieldset:nth-child(2) {
@@ -888,7 +939,12 @@ body {
 }
 
 .catalog-card-image {
-  margin-bottom: -13px;
+  margin-bottom: 11px;
+}
+
+.catalog-card-name {
+  text-decoration: none;
+  color: #000000;
 }
 
 .number-of-hotels {
@@ -912,7 +968,6 @@ body {
   width: 163px;
   height: 48px;
   display: flex;
-  column-gap: 8px;
   margin-left: auto;
 }
 
@@ -922,7 +977,6 @@ body {
 
 .view-type-item:nth-child(1) {
   border-radius: 4px;
-  margin: 0;
   color: #000000;
   background-color: #ffffff;
   background-image: url(../images/icon-table-1.svg);
@@ -930,16 +984,16 @@ body {
   background-position-y: center;
   background-repeat: no-repeat;
   outline: none;
+  margin-left: 3px;
 }
 
 .view-type-item-wrapper {
-  border: 3px solid #000000;
+  border: 2px solid #000000;
 }
 
 .view-type-item:nth-child(2) {
-  border: 3px solid #EEEEEE;
+  border: 2px solid #EEEEEE;
   border-radius: 4px;
-  margin: 0;
   color: #000000;
   background-color: #ffffff;
   background-image: url(../images/icon-table-2.svg);
@@ -950,9 +1004,8 @@ body {
 }
 
 .view-type-item:nth-child(3) {
-  border: 3px solid #EEEEEE;
+  border: 2px solid #EEEEEE;
   border-radius: 4px;
-  margin: 0;
   color: #000000;
   background-color: #ffffff;
   background-image: url(../images/icon-table-3.svg);
@@ -963,9 +1016,11 @@ body {
 }
 
 .view-type-item .button {
-  width: 43px;
+  width: 48px;
   height: 48px;
-  margin-top: -3px;
+  margin-top: -2px;
+  margin-left: -2px;
+  margin-right: -2px;
   box-sizing: border-box;
   border-radius: 4px;
   display: block;
@@ -973,19 +1028,15 @@ body {
 }
 
 .view-type-item:hover {
-  border: 3px solid #000000;
-}
-
-.view-type-item:focus {
-  border: 3px solid #68A2CA;
+  border: 2px solid #000000;
 }
 
 .view-type-item:active {
-  border: 3px solid #000000;
+  border: 2px solid #000000;
 }
 
 .view-type-item .button:focus {
-  border: 3px solid #68A2CA;
+  border: 2px solid #68A2CA;
 }
 
 .catalog-filter {
@@ -1029,7 +1080,8 @@ body {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
-  width: 220px;
+  left: 0;
+  width: 228px;
 }
 
 
@@ -1098,7 +1150,6 @@ body {
 
 .catalog {
   width: 1056px;
-  height: 876px;
   margin-bottom: 96px;
   padding-left: 73px;
   margin-bottom: 67px;
@@ -1171,6 +1222,7 @@ body {
   width: 301px;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-top: 15px;
 }
 
 .button-insert {
@@ -1326,6 +1378,7 @@ body {
   background-position: right 18px center;
   appearance: none;
   padding-left: 20px;
+  border-radius: 4px;
 }
 
 .newsletter-catalog {
@@ -1340,29 +1393,6 @@ body {
   justify-content: center;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.newsletter-catalog .newsletter-title {
-  color: #000000;
-  background-color: #ffffff;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 29px;
-}
-
-.newsletter-catalog .newsletter-text {
-  color: #333333;
-  background-color: #ffffff;
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-  text-align: center;
-  margin: 0px;
-  margin-bottom: 46px;
 }
 
 .main-header {
@@ -1756,11 +1786,13 @@ body {
   position: absolute;
   right: 15px;
   top: 18px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border: none;
   background-image: url(../images/calendar.svg);
   background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  margin-right: 4px;
 }
 
 .date-button-wrapper {
